@@ -9,7 +9,7 @@
  * @package    Zaape_Table
  * @copyright  No Applied
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    00.1
+ * @version    00.3
  */
 
 /** @see Zend_Db_Table_Abstract */
