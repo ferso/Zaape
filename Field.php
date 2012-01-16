@@ -566,7 +566,7 @@ class Zaape_Field {
 	/**
 	 *
 	 * if the string is a filename ...
-	 * @param unknown_type $string
+	 * @param string $string
 	 */
 	public function getExtension($string = null) {
 
@@ -646,6 +646,11 @@ class Zaape_Field {
 	} 
 	
 	
+	
+	/**
+	 * 
+	 * @param array $data
+	 */
 	function setMergeValue( $data ){
 		
 		
@@ -662,12 +667,24 @@ class Zaape_Field {
 		
 	}
 	
+	
+	/**
+	 * 
+	 * @return string
+	 * 
+	 */
 	function getMetaValue(){
 		
 		return $this->metaValue;
 		
 	}
 	
+	
+	/**
+	 * 
+	 * @param string $value
+	 * 
+	 */
 	function setMetaValue( $value ){
 		
 		$this->metaValue = $value;
@@ -675,6 +692,13 @@ class Zaape_Field {
 	}
 	
 	
+	
+	/**
+	 * 
+	 * @param string $key
+	 * @return Zaape_Field
+	 * 
+	 */
 	function getMeta( $key ){
 		
 		$value = $this->value;
@@ -693,6 +717,12 @@ class Zaape_Field {
 	}
 	
 	
+	/**
+	 * 
+	 * @param string $value
+	 * 
+	 * 
+	 */
 	public function flip( $value = null ){
 	
 	    $value = $value ? $value : $this->value;
@@ -710,7 +740,12 @@ class Zaape_Field {
 	
 	}
 	
-	
+	/**
+	 * 
+	 * @param boolean $flag 
+	 * 
+	 * 
+	 */
 	public function getFlipValue( $flag = false ){
 	    
 	    if( $flag ){
