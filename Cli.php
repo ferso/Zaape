@@ -19,22 +19,23 @@ class Zaape_Cli extends Zend_Controller_Router_Abstract{
 				
 				$dispatcher->setControllerName ( $controller );
 				$dispatcher->setActionName ($action );
+				
 				unset ($_SERVER ['argv'] [1]);
 
 				return $dispatcher;
 			}
 
-			echo "Invalid command.\n", exit;
+			exit(  "Invalid command.\n" );
 
 		}
 
-		echo "No command given.\n", exit;
+		exit( "No command given.\n" );
 	}
 
 
 	public function assemble ($userParams, $name = null, $reset = false, $encode = true){
 		
-		echo "Not implemented\n", exit;
+		exit(  "Not implemented\n" );
 	
 	}
 
