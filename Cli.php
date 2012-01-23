@@ -15,17 +15,17 @@ class Zaape_Cli extends Zend_Controller_Router_Abstract{
 		    $controller = $arguments[0];
 		    $action     = $arguments[1];
 		    
- 			if (! preg_match ('~\W~', $command)){
+ 			//if (! preg_match ('~\W~', $command)){
 				
 				$dispatcher->setControllerName ( $controller );
 				$dispatcher->setActionName ($action );
 				
-				unset ($_SERVER ['argv'] [1]);
+				//unset ($_SERVER ['argv'] [1]);
 
 				return $dispatcher;
-			}
+			//}
 
-			exit(  "Invalid command.\n" );
+			//exit(  "Invalid command.\n" );
 
 		}
 

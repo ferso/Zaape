@@ -753,7 +753,7 @@ class Zaape_Table extends Zend_Db_Table_Abstract {
 
 		$this->_pointer = 0;
 		$this->_last_query = $query;
-		$this->_rowSet = $this->_db->query( $query )->fetchAll();
+		$this->setRowSet( $this->_db->query( $query )->fetchAll() );
 
 	}
 
@@ -1090,6 +1090,13 @@ class Zaape_Table extends Zend_Db_Table_Abstract {
 	
 	
 	
+	public function getRowCount(){
+	    
+	    $sql = "SELECT COUNT(*) FROM $this->_name";
+	    $row = $this->_db->query($sql);
+	    
+	    return $row->fetchColumn(0);
+	}
 	
 	
  

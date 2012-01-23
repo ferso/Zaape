@@ -46,11 +46,11 @@ class Zaape_Field {
 	 */
 	public function init() {
 
-		$this->_method 	= $_SERVER ["REQUEST_METHOD"];
-		$this->_agent 	= (isset ( $_SERVER ["HTTP_USER_AGENT"] )) ? $_SERVER ["HTTP_USER_AGENT"] : null;
-		$this->_ip 		= $_SERVER ["REMOTE_ADDR"];
-		$this->_port 	= $_SERVER ['SERVER_PORT'];
-		$this->value 	= '';
+		//$this->_method 	= @$_SERVER ["REQUEST_METHOD"];
+		//$this->_agent 	= (isset ( $_SERVER ["HTTP_USER_AGENT"] )) ? $_SERVER ["HTTP_USER_AGENT"] : null;
+		///$this->_ip 		= $_SERVER ["REMOTE_ADDR"];
+		//$this->_port 	= $_SERVER ['SERVER_PORT'];
+		//$this->value 	= '';
 
 	}
 
